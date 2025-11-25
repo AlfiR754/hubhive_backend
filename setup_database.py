@@ -37,6 +37,7 @@ def setup_database():
                 admin = User(
                     email=admin_email,
                     username="admin",
+                    display_name = "admin",     #display name field
                     user_type="admin",
                     bio="System Administrator",
                     location={"latitude": 40.7282, "longitude": -73.7949, "address": "NYU"}
@@ -55,6 +56,7 @@ def setup_database():
                 business = User(
                     email=business_email,
                     username="nyucoffee",
+                    display_name= "NYU Coffee",   #display name field
                     user_type="business",
                     bio="Best coffee near NYU!",
                     location={"latitude": 40.7291, "longitude": -73.9965, "address": "123 University Pl"}
